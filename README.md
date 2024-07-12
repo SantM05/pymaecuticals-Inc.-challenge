@@ -4,7 +4,7 @@ Pymaceuticals,Inc. challenge
 ###### 1. On this line of code plt.bar(x_axis, total_drug_tpoints, color = '#0072B2', alpha=1, align="edge", width=0.6) the code snipet "color = '#0072B2', alpha=1,"
 ###### 2. On this line of code plt.pie(data_pie, labels=labels, autopct='%1.1f%%', startangle=90) this code snipet "autopct='%1.1f%%', startangle=90)"
 ###### 3. On this line of code final_volume = clean_merge_study_metadata[(clean_merge_study_metadata['Timepoint'] == 45) & 
-###### (clean_merge_study_metadata['Drug Regimen'].isin(['Capomulin', 'Ramicane', 'Infubinol', 'Ceftamin']))].groupby('Mouse ID')['Timepoint'].max() this addition of the isin() function
+###### (clean_merge_study_metadata['Drug Regimen'].isin(['Capomulin', 'Ramicane', 'Infubinol', 'Ceftamin']))].groupby('Mouse ID')['Timepoint'].max() the addition of the isin() function
 ###### 4. On this line of code  final_volume_data = merge_final_volume.loc[merge_final_volume.index.isin(merge_final_volume.groupby('Mouse ID')
 ###### ['Timepoint_x'].idxmax()),'Tumor Volume (mm3)'] the addition of the index() and isin() function as well as a change from max () function to idmax() function
 ###### 5. On this line of code outliers = final_volume_data[(final_volume_data<lower_bound)| (final_volume_data>upper_bound)] the use of the bitwise operator instead of the or operator
